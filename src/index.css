@@ -1,1 +1,153 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap");
+
+@theme {
+  --color-primary: #0c3276;
+  --color-primary-container: #2b4a8e;
+  --color-primary-fixed: #dae2ff;
+  --color-primary-fixed-dim: #b1c5ff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #a4bcff;
+  
+  --color-secondary: #3e5ca1;
+  --color-secondary-container: #98b4ff;
+  --color-secondary-fixed: #dae2ff;
+  --color-secondary-fixed-dim: #b1c5ff;
+  
+  --color-tertiary: #4d3000;
+  --color-tertiary-container: #6c4500;
+  --color-tertiary-fixed: #ffddb4;
+  --color-tertiary-fixed-dim: #ffb955;
+  --color-on-tertiary: #ffffff;
+  
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+  --color-surface: #f8f9fa;
+  --color-on-surface: #191c1d;
+  --color-surface-variant: #e1e3e4;
+  --color-on-surface-variant: #444650;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container: #edeeef;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+  
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+  
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-slow: marquee 45s linear infinite;
+  --animate-bounce-slow: bounce 3s infinite;
+  
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b4a8e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3566;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #2b4a8e, #3a5fa8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f5a623, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animated gradient background */
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse glow */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(245, 166, 35, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(245, 166, 35, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arising Tutorials | Premier Coaching in Mumbai</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-container": "#feae2c",
+                        "on-secondary-container": "#244488",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#dae2ff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#244487",
+                        "primary-container": "#2b4a8e",
+                        "tertiary": "#4d3000",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary-fixed": "#ffddb4",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#b1c5ff",
+                        "on-primary-fixed": "#001946",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container": "#edeeef",
+                        "surface": "#f8f9fa",
+                        "primary": "#0c3276",
+                        "surface-dim": "#d9dadb",
+                        "tertiary-fixed-dim": "#ffb955",
+                        "surface-tint": "#3e5ca1",
+                        "on-secondary-fixed": "#001946",
+                        "outline": "#747782",
+                        "outline-variant": "#c4c6d2",
+                        "background": "#f8f9fa",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "on-primary-container": "#a4bcff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#633f00",
+                        "on-background": "#191c1d",
+                        "on-secondary-fixed-variant": "#244487",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "secondary-fixed-dim": "#b1c5ff",
+                        "tertiary-container": "#6c4500",
+                        "on-surface": "#191c1d",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container-high": "#e7e8e9",
+                        "on-surface-variant": "#444650",
+                        "on-tertiary-fixed": "#291800",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#98b4ff",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#3e5ca1",
+                        "on-primary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(12, 50, 118, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            animation: marquee 30s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-tertiary-fixed-dim selection:text-tertiary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md shadow-[0_20px_40px_rgba(12,50,118,0.06)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold text-[#0c3276] dark:text-white tracking-tighter">
+                Arising Tutorials
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#0c3276] dark:text-[#ffb955] font-bold border-b-2 border-[#ffb955] pb-1 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#ffb955] transition-colors duration-300" href="#">Courses</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#ffb955] transition-colors duration-300" href="#">Results</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#ffb955] transition-colors duration-300" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#ffb955] transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-tertiary-fixed-dim text-tertiary font-bold px-6 py-2.5 rounded-xl scale-95 active:scale-90 transition-transform hover:shadow-lg">
+                Enroll Now
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-16 md:py-24">
+<div class="absolute inset-0 hero-pattern opacity-60"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Left Content -->
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 bg-tertiary/5 text-tertiary px-4 py-1.5 rounded-full border border-tertiary/10">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">campaign</span>
+<span class="text-xs font-bold uppercase tracking-wider font-label">Admissions closing 15 April 2026</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline text-primary leading-[1.1] tracking-tight">
+                        Where Every Student <br/>
+<span class="text-tertiary-fixed-dim">Rises to Excel</span>
+</h1>
+<p class="text-lg text-on-surface-variant font-medium max-w-lg leading-relaxed">
+                        Premier coaching since 2009 | Rated 4.7 on Google | Andheri East, Mumbai
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+                            Enroll Now
+                        </button>
+<button class="bg-white border-2 border-primary/20 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-all">
+                            Get Free Demo
+                        </button>
+</div>
+</div>
+<!-- Right Visual -->
+<div class="relative">
+<div class="relative w-full aspect-square max-w-lg mx-auto lg:ml-auto">
+<!-- Abstract Geometric Container -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container rounded-[3rem] rotate-3 shadow-2xl"></div>
+<img alt="Students Learning" class="absolute inset-0 w-full h-full object-cover rounded-[3rem] -rotate-3 transition-transform hover:rotate-0 duration-500 shadow-xl" data-alt="Modern high-end classroom setting with diverse students engaged in learning, warm cinematic lighting, soft background blur, academic prestige vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFs5peqjskCkrSyagfIHfEuAWNkqTwXpWCarSN4RhaXiB6gSsa8wz6sP7ykaZHlSk6DaWj04hTX8xcmjPXNxnMqUNgDRxAh957QS4IKKg2XodKL6XQGR4-qA9JHy4tdWTZZdlSmc37-RS8RH1mx_02DFraPb9joGmcATZZtAuK5Q-02kqNruRN3WKVuSEd2Nhg63pBq6a5fiLw_PjPZhX1pYFZWyuecAQ3RzG5lCAUOA20jysFNyyDlVEhGuIlS7jeX5WF1sGj6g"/>
+<!-- Floating Stat Cards -->
+<div class="absolute -top-6 -left-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-[0_20px_40px_rgba(12,50,118,0.06)] border border-primary/5 animate-bounce-slow">
+<p class="text-xs font-bold text-primary/60 uppercase font-label">Experience</p>
+<p class="text-2xl font-black text-primary">Since 2009</p>
+</div>
+<div class="absolute top-1/4 -right-10 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-[0_20px_40px_rgba(12,50,118,0.06)] border border-primary/5">
+<div class="flex items-center gap-1 text-tertiary-fixed-dim">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-2xl font-black text-primary">4.7 Rating</span>
+</div>
+</div>
+<div class="absolute -bottom-8 left-1/4 bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-[0_20px_40px_rgba(12,50,118,0.06)] border border-primary/5">
+<p class="text-primary text-3xl font-black">1000+ <span class="text-sm font-bold text-on-surface-variant block uppercase tracking-tighter">Students Mentored</span></p>
+</div>
+<div class="absolute bottom-1/4 -right-6 bg-primary text-white p-4 rounded-2xl shadow-xl shadow-primary/30">
+<p class="text-2xl font-black">96%</p>
+<p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Top Score</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ticker Marquee -->
+<div class="bg-tertiary-fixed-dim py-3 overflow-hidden border-y border-tertiary/10">
+<div class="animate-marquee whitespace-nowrap">
+<div class="flex items-center gap-12 px-6">
+<span class="text-tertiary font-black text-xl tracking-tighter">SSC</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">CBSE</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">ICSE</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">JEE</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">NEET</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">CLASS 6-12</span>
+<span class="text-tertiary/30">•</span>
+</div>
+<!-- Duplicate for seamless loop -->
+<div class="flex items-center gap-12 px-6">
+<span class="text-tertiary font-black text-xl tracking-tighter">SSC</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">CBSE</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">ICSE</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">JEE</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">NEET</span>
+<span class="text-tertiary/30">•</span>
+<span class="text-tertiary font-black text-xl tracking-tighter">CLASS 6-12</span>
+<span class="text-tertiary/30">•</span>
+</div>
+</div>
+</div>
+<!-- Social Proof Strip -->
+<section class="bg-surface-container-low py-12">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+<div class="flex flex-col md:flex-row items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm">
+<img alt="Google" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ViUWMOOvTE-bBjM7j51FhBxVSr3-oHnnVqZBTvCwVI9GhmBm8dM3naZLG7A-ZpUDP-z0ycTMQnOJegkg_tMQwWajCXtOWpgMRYgPtMG2KsVBAPtTTz63LS_Xdkba5Bs3LqHrm7bBxDB0YVjG0vz31X7ox3S48nonyKf6F2IeP7maMvpOyHijsflkHQywZXeBuzxy9IqQ-4wBOV02CrR3o5m_rIM9z8zWslB_587VYpZ2zDoV3tjRk74_-tHpqUoa7va4hNMO_g"/>
+</div>
+<div>
+<div class="flex items-center justify-center md:justify-start gap-1 text-tertiary-fixed-dim mb-0.5">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="text-primary font-bold ml-1">4.7</span>
+</div>
+<p class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest font-label">67 Google Reviews</p>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center border-x-0 md:border-x border-outline-variant/20 px-4">
+<p class="text-4xl font-black text-primary">15+ Years</p>
+<p class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest font-label">Academic Excellence</p>
+</div>
+<div class="flex flex-col items-center md:items-end">
+<div class="flex -space-x-3 mb-2">
+<img class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a happy student" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDatLKQCJlP2iLS_dYkOhQhe6zxLApYUKGeFCamffJAfZjWzkw1zXvoO75d5UfsbzWK_ALbORHW7iS2jtrLEyTbn9bHtqJwSdThRQ5ri_iBo8l7G0RXDu5zW-TJID0DsX6GZrKTUpDSwaJKloRtOobvSmGI3XjPh1HApH62qb1VI69Nd8pLXtHAJ2oYN9T8KavhipJdJ_u_gAo2r4kfEk2WHwfkUoEVFsllgbzhzKHYdHwTJ0eEUiixlt2pMrHHl7Y2x8fSYo2RFw"/>
+<img class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a male student" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3fOuIi2L--PmKP8nxX-XraTrDXxTVeekTWN9VQbo4CNV8abkjiUInDsflZe_4r63mBJc9rZg0iCIwjn2n4hzpBPk61hIiuaggEye8ZqUF4mJIHDVTIVb0B5ssEfaMdNGDtPks4MKY2uiGlOuCCo53AqFYTGsSFPSUnZNHHBvH5TYYnCqPOoO6BRfVNM-S4dIB2tt72TUV6NsDi8-Cne4RA1j4D6n0jTVhKF5DLEdqUoBNc2zxB6IR-NYzFm2_w1uB6_5_LpHhiQ"/>
+<img class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a smiling female student" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBH1a3smBA9caajsiJbDvNJ0AWG-b2CZk7eBYltDXZiD5AezBUr9g4RYJ6VdJ85DE9oUMJPUedCvb0qxjQWH3M-ktY7bgigGHI18xRBPXpBqpDb-ip7rE3tHusMb4cbGeLLGYveEm2X5oarW19Lf8zTQ9GIEQ5UJ2MgINM5RUeuCCyrio75g67r2EKscW4O6SpXrpd8uHbPYQR53bm0EsaBjTrEJqQYS4jXHHaAnF6MpM9pwdjEpiPuHBABgaqNrjRLiWfKZK023w"/>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-primary-container flex items-center justify-center text-[10px] text-white font-bold">+500</div>
+</div>
+<p class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest font-label">Success Stories Shared</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Programs Grid (Bento Style) -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 text-center max-w-2xl mx-auto">
+<h2 class="text-4xl font-extrabold font-headline text-primary mb-4">World-Class Learning Tracks</h2>
+<p class="text-on-surface-variant font-medium">Tailored educational pathways designed to unlock potential and guarantee academic success.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-3xl bg-primary text-white p-12 transition-all hover:shadow-2xl hover:shadow-primary/30">
+<div class="absolute top-0 right-0 p-12 opacity-10 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[120px]">school</span>
+</div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<span class="bg-tertiary-fixed-dim text-tertiary text-[10px] font-black uppercase tracking-[0.2em] px-3 py-1 rounded-full">Flagship Program</span>
+<h3 class="text-4xl font-bold font-headline mt-6 mb-4 leading-tight">Elite Foundation &amp; Board Prep</h3>
+<p class="text-primary-fixed/80 max-w-md text-lg">Comprehensive curriculum for Class 8-10 across SSC, ICSE, and CBSE boards with a focus on conceptual clarity.</p>
+</div>
+<div class="mt-8">
+<button class="flex items-center gap-2 font-bold hover:gap-4 transition-all">
+                                    Explore Curriculum <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Vertical Card -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-10 hover:bg-white transition-all shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 bg-tertiary-fixed-dim/20 text-tertiary rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">biotech</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-primary mb-4">NEET Focus</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Dedicated medical entrance preparation with expert biology faculty and rigorous mock tests.</p>
+<button class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                            View Details <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<!-- Small Card 1 -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-10 hover:bg-white transition-all shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 bg-primary/5 text-primary rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">calculate</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-primary mb-4">JEE Main &amp; Adv.</h3>
+<p class="text-on-surface-variant leading-relaxed">Engineered for success. Advanced problem solving and conceptual deep-dives for aspiring IITians.</p>
+</div>
+<!-- Small Card 2 -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container-low p-10 hover:bg-white transition-all shadow-sm hover:shadow-xl">
+<div class="w-14 h-14 bg-secondary-container/20 text-secondary rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-primary mb-4">Junior Science</h3>
+<p class="text-on-surface-variant leading-relaxed">Nurturing curiosity for Class 6-7. Building a rock-solid base for future competitive exams.</p>
+</div>
+<!-- Small Card 3 -->
+<div class="group relative overflow-hidden rounded-3xl bg-[#fefce8] p-10 border border-tertiary-fixed-dim/30 transition-all hover:shadow-xl">
+<div class="w-14 h-14 bg-tertiary-fixed-dim text-tertiary rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-tertiary mb-4">Scholarships</h3>
+<p class="text-on-tertiary-fixed-variant leading-relaxed">Up to 100% scholarship for meritorious students. Apply for the Arising Talent Search Exam.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Arising (Asymmetric Layout) -->
+<section class="py-24 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-tertiary-fixed-dim/20 rounded-full blur-3xl"></div>
+<div class="grid grid-cols-2 gap-4">
+<img alt="Coaching session" class="rounded-3xl shadow-lg mt-12 hover:-translate-y-2 transition-transform duration-500 h-64 object-cover" data-alt="Professor teaching students on a whiteboard in a modern clean classroom, focused atmosphere, premium education style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx3xm9NJEizxg8J205no710nmiN9oJjDpDpBvZzh4fxSjSdm-aExWi_p2MflfVaGrpRs4n2k4pXSXxMewe2QxFOwTnDdTBTWg5uupMBztPvsdpfpZkq_jFVD3AzSW7jjBjLOTzkXz-rhSaJe0a8NtId4v43trNR6n6tuvkA1WO2izXU9rNy2CYsMMsczqilO2CPwVDtt1nFnccsJF96lCPIrHvgpNu6_x3E83R8Ukxg76XwqLyTVEXmEB6dONK0iCA12pAqFe01Q"/>
+<img alt="Student studying" class="rounded-3xl shadow-lg hover:-translate-y-2 transition-transform duration-500 h-80 object-cover" data-alt="Focused student using a tablet for digital learning in a well-lit library or classroom, modern educational technology" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqIbAT2ATnitc6L7TtS3XV_veYEGhWcwnkiwtNUk0mu8FoGT7SzhB7eSX2IPmwVKH1R-5hHBlzADxU7aUx83Nmkvcz6HzXBd9LrQKs_sPffpzuT_5kuS5ppj6JTSZC_OH7Bn_J_8IMysFHLcwZulV-XwSFNTEWEAQFkJtHPToTXu5XtE3erAEOQW8AQFhRXyduUdSc4ZSWq34QAeMyN5OP8AAXPabww21VI9uh6_XrMpWBA6Vj_RIlhmExLpsSvest7e0bX3rxcw"/>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-10">
+<div class="space-y-4">
+<h4 class="text-tertiary font-bold uppercase tracking-widest text-xs font-label">The Arising Edge</h4>
+<h2 class="text-4xl font-extrabold font-headline text-primary">Beyond Just Rote Learning</h2>
+<p class="text-on-surface-variant font-medium text-lg leading-relaxed">We believe in a holistic approach to education where students are mentored, not just taught. Our methodology is refined over 15 years of delivering top Mumbai results.</p>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<h5 class="text-lg font-bold text-primary mb-1">Small Batch Sizes</h5>
+<p class="text-on-surface-variant text-sm">Personalized attention for every student. Maximum 25 students per batch to ensure interactive learning.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div>
+<h5 class="text-lg font-bold text-primary mb-1">Weekly Performance Tracking</h5>
+<p class="text-on-surface-variant text-sm">Granular analytics shared with parents every Sunday. We map progress to identify and fix weak spots early.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-white shadow-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">psychology_alt</span>
+</div>
+<div>
+<h5 class="text-lg font-bold text-primary mb-1">24/7 Doubt Solving</h5>
+<p class="text-on-surface-variant text-sm">Access our digital doubt portal any time. Our subject matter experts respond within 60 minutes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto rounded-[3rem] bg-gradient-to-br from-primary to-primary-container p-12 md:p-24 relative overflow-hidden text-center">
+<div class="absolute inset-0 hero-pattern opacity-10"></div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-4xl md:text-6xl font-extrabold text-white font-headline leading-tight">Ready to Rise to Your Potential?</h2>
+<p class="text-primary-fixed text-lg max-w-2xl mx-auto">Join the 2025-26 batch today. Limited seats available in Andheri East &amp; Vile Parle centers.</p>
+<div class="flex flex-wrap justify-center gap-6 pt-4">
+<button class="bg-tertiary-fixed-dim text-tertiary px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl hover:scale-105 active:scale-95 transition-all">
+                            Enroll Now
+                        </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/20 transition-all">
+                            Contact Admission Cell
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-[#f8f9fa] dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0 space-y-4 text-center md:text-left">
+<div class="text-lg font-bold text-[#0c3276] dark:text-white">Arising Tutorials</div>
+<p class="text-slate-500 max-w-xs text-sm Inter font-medium">Empowering the next generation of leaders through rigorous academic excellence and mentorship since 2009.</p>
+<div class="flex justify-center md:justify-start gap-4">
+<a class="opacity-80 hover:opacity-100 transition-opacity text-primary" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="opacity-80 hover:opacity-100 transition-opacity text-primary" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="opacity-80 hover:opacity-100 transition-opacity text-primary" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-x-12 gap-y-6">
+<div class="space-y-4">
+<p class="font-bold text-[#0c3276] uppercase text-xs tracking-widest font-label">Links</p>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 text-sm font-medium hover:text-[#0c3276] transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 text-sm font-medium hover:text-[#0c3276] transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 text-sm font-medium hover:text-[#0c3276] transition-colors" href="#">Sitemap</a>
+<a class="text-slate-500 text-sm font-medium hover:text-[#0c3276] transition-colors" href="#">Careers</a>
+</div>
+</div>
+<div class="space-y-4">
+<p class="font-bold text-[#0c3276] uppercase text-xs tracking-widest font-label">Contact</p>
+<div class="flex flex-col gap-2">
+<p class="text-slate-500 text-sm font-medium">Andheri East, Mumbai</p>
+<p class="text-slate-500 text-sm font-medium">+91 98765 43210</p>
+<p class="text-slate-500 text-sm font-medium">info@arisingtutorials.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 py-6 text-center">
+<p class="text-slate-500 font-medium Inter text-sm">© 2024 Arising Tutorials. Premier Coaching Since 2009.</p>
+</div>
+</footer>
+</body></html>
