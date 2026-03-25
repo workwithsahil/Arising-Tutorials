@@ -33,7 +33,7 @@ export const siteInfo = {
 
 export const courses = [
   {
-    category: "Class 6 - 8",
+    category: "Class 8 to 10 Foundation",
     subtitle: "Building Strong Foundations",
     items: [
       { name: "Class VI", board: "SSC", fee: "8,000" },
@@ -45,7 +45,7 @@ export const courses = [
     ],
   },
   {
-    category: "Class 9 - 10",
+    category: "Class 8 to 10 Board Prep",
     subtitle: "Board Exam Excellence",
     items: [
       { name: "Class IX", board: "SSC", fee: "25,000" },

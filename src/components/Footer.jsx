@@ -61,8 +61,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               {[
-                "Class 6 - 8 Foundation",
-                "Class 9 - 10 Board Prep",
+                "Class 8 to 10 Foundation",
+                "Class 8 to 10 Board Prep",
                 "Class 11 - 12 Science",
                 "JEE Main & Advanced",
                 "NEET Preparation",
