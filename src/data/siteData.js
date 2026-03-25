@@ -26,9 +26,9 @@ export const siteInfo = {
   boards: ["SSC", "CBSE", "ICSE"],
   exams: ["JEE Main & Advanced", "NEET", "MHCET", "CET"],
   mission:
-    "Our mission is to create ethical and intellectual personnel through qualitative education. Arising Tutorials is committed to take education to every single door, making it a superb blend of knowledge and job specific.",
+    "Our mission is to transform students into ethical and intellectual high-achievers. At Arising Tutorials, we bring quality education to every door, blending deep knowledge with practical, exam-ready skills.",
   description:
-    "Arising Tutorials in Andheri East, Mumbai is a renowned educational institution that has been offering high-quality coaching services since 2009. Specializing in a wide range of academic and competitive exam preparations, the institute has become a trusted destination for students looking to achieve academic success.",
+    "Operating in Andheri East, Mumbai since 2009, Arising Tutorials is the trusted destination for students aiming high. We specialize in Class 8-12 (SSC, CBSE, ICSE), JEE (Main & Advanced), and NEET coaching, delivering consistently top-tier results through personal attention and expert mentorship.",
 };
 
 export const courses = [
@@ -91,51 +91,51 @@ export const results = [
 export const features = [
   {
     id: "personal-attention",
-    title: "Personal Attention",
+    title: "Guaranteed Personal Attention",
     description:
-      "Every student is given individual priority and dedicated focus to ensure no one falls behind.",
+      "Unlike crowded classes, we prioritize every student individually. No child is left behind in their academic journey.",
   },
   {
     id: "small-batches",
-    title: "Small Batch Sizes",
+    title: "Premium Small Batch Sizes",
     description:
-      "Smaller batches ensure quality interaction between students and faculty for effective learning.",
+      "We strictly limit intake to ensure high-quality interaction between students and faculty for faster learning.",
   },
   {
     id: "experienced-faculty",
-    title: "Experienced Faculty",
+    title: "Vetted Subject Experts",
     description:
-      "Expert faculty who know subjects deeply and explain concepts in a simple, easy-to-understand way.",
+      "Learn from professionals who break down complex concepts into simple, easy-to-digest steps.",
   },
   {
     id: "mock-tests",
-    title: "Regular Mock Tests",
+    title: "Exam-Ready Mock Tests",
     description:
-      "Frequent assessments and mock tests to track progress and build exam readiness.",
+      "Regular assessments under real-time conditions to track daily progress and build exam-day confidence.",
   },
   {
     id: "doubt-solving",
-    title: "Doubt Solving Sessions",
+    title: "Unlimited Doubt Support",
     description:
-      "Dedicated morning lectures and regular sessions to clear all doubts and strengthen concepts.",
+      "Dedicated morning lectures ensure that no doubt remains unsolved, strengthening your core foundations.",
   },
   {
     id: "ac-classrooms",
-    title: "AC Classrooms",
+    title: "Modern AC Classrooms",
     description:
-      "Modern, air-conditioned classrooms equipped with state-of-the-art technology for comfortable learning.",
+      "A distraction-free, air-conditioned environment equipped with modern tools for optimal focus.",
   },
   {
     id: "career-guidance",
-    title: "Career Guidance",
+    title: "Strategic Career Guidance",
     description:
-      "Professional counseling services to help students manage stress and make informed career decisions.",
+      "Expert counseling to help students manage academic stress and choose the right path for their future.",
   },
   {
     id: "study-material",
-    title: "Study Material",
+    title: "High-Yield Study Material",
     description:
-      "Comprehensive and updated study guides, library access, and e-learning resources for additional practice.",
+      "Comprehensive, updated guides and e-learning resources designed to maximize your exam scores.",
   },
 ];
 

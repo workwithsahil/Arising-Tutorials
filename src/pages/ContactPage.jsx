@@ -26,8 +26,7 @@ export default function ContactPage() {
               Contact <span className="text-tertiary-fixed-dim">Us</span>
             </h1>
             <p className="text-white/70 text-lg sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-              Get in touch to enquire about admissions, request a free demo
-              class, or learn more about our programs.
+              Take the first step toward academic success. Contact us to claim your free demo session or enquire about admissions.
             </p>
           </motion.div>
         </div>
@@ -38,9 +37,8 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
             <span className="material-symbols-outlined text-primary text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>campaign</span>
-            <p className="text-primary font-bold text-sm sm:text-base font-headline">
-              Admissions Open for 2026-27 — Vacation cum Regular Batch starting
-              from {siteInfo.admissionDeadline}
+            <p className="text-primary font-bold text-sm sm:text-base font-headline uppercase tracking-wide">
+              Admissions closing soon for 2026-27! Claim your seat before the deadline.
             </p>
           </div>
         </div>
@@ -228,12 +226,10 @@ export default function ContactPage() {
              <div className="absolute bottom-0 left-0 w-64 h-64 bg-tertiary-fixed-dim/20 rounded-full blur-[80px]" />
              
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-headline text-white mb-6 tracking-tight relative z-10">
-              Book a <span className="text-tertiary-fixed-dim">Free Demo</span> Class
+              Claim Your <span className="text-tertiary-fixed-dim">Free Demo</span> Class
             </h2>
             <p className="text-white/80 max-w-2xl mx-auto mb-10 text-lg sm:text-xl font-medium leading-relaxed relative z-10">
-              Experience our teaching methodology firsthand. Schedule a free
-              demo class for your child and see the Arising Tutorials
-              difference.
+              See the "Arising Edge" in action. Book a complimentary session today and experience our expert mentorship firsthand.
             </p>
             <a
               href={`https://wa.me/91${siteInfo.whatsapp}?text=Hi, I would like to book a free demo class at Arising Tutorials.`}

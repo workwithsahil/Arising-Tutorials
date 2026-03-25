@@ -27,8 +27,7 @@ export default function ResultsPage() {
               Our <span className="text-tertiary-fixed-dim">Results</span>
             </h1>
             <p className="text-white/70 text-lg sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-              Our students consistently prove that hard work and the right
-              guidance lead to exceptional results.
+              Proven results year after year. Our students consistently outshine the competition with elite scores and top rankings.
             </p>
           </motion.div>
         </div>
@@ -73,11 +72,10 @@ export default function ResultsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-extrabold text-primary font-headline tracking-tight">
-              SSC Board Toppers{" "}
-              <span className="text-tertiary">2024-25</span>
+              Celebrating Our <span className="text-tertiary">2024-25 Stars</span>
             </h2>
             <p className="text-on-surface-variant font-medium mt-4 text-lg">
-              Congratulations to all our star performers
+              Meet the achievers who turned dedication into top-tier board scores.
             </p>
           </motion.div>
 
@@ -173,7 +171,7 @@ export default function ResultsPage() {
             className="text-center mt-20"
           >
             <p className="text-on-surface-variant text-base font-medium mb-6">
-              Want your child to achieve similar results?
+              Ready to secure your spot among the next batch of toppers?
             </p>
             <Link
               to="/contact"

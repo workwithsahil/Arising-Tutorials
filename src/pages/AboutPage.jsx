@@ -46,8 +46,7 @@ export default function AboutPage() {
               About <span className="text-tertiary-fixed-dim">Us</span>
             </h1>
             <p className="text-white/70 text-lg sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-              Learn about our mission, values, and commitment to transforming
-              students into achievers.
+              Discover how we've been transforming students into academic high-achievers through elite coaching and personal mentorship.
             </p>
           </motion.div>
         </div>
@@ -67,8 +66,8 @@ export default function AboutPage() {
                 Our Mission
               </span>
               <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3 mb-8 tracking-tight">
-                Creating Ethical and Intellectual{" "}
-                <span className="text-tertiary">Personnel</span>
+                Where Excellence Meets{" "}
+                <span className="text-tertiary">Ethics</span>
               </h2>
               <p className="text-on-surface-variant font-medium text-lg leading-relaxed mb-6">
                 {siteInfo.mission}
@@ -113,11 +112,11 @@ export default function AboutPage() {
                   <h3 className="text-2xl font-extrabold font-headline mb-8">Our Values</h3>
                   <ul className="space-y-6">
                     {[
-                      "Qualitative education accessible to every student",
-                      "Diverse courses with modern teaching methodology",
-                      "Efficient faculty team and effective management",
-                      "Career guidance and motivational support",
-                      "A superb blend of knowledge and practical skills",
+                      "Elite education accessible to every student",
+                      "Modern pedagogy for competitive exam success",
+                      "Expert faculty with 15+ years of proven results",
+                      "One-on-one career guidance and peak performance support",
+                      "The perfect blend of conceptual depth and exam skills",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
                         <span className="material-symbols-outlined text-tertiary-fixed-dim text-xl shrink-0 mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
@@ -202,7 +201,7 @@ export default function AboutPage() {
               Policies
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3 tracking-tight">
-              Our Commitments
+              Our Commitment to You
             </h2>
           </motion.div>
 

@@ -31,7 +31,7 @@ export default function CTABanner() {
             </h2>
             
             <p className="text-primary-fixed-dim text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
-              Join the 2026-27 batch today. Limited seats available for Class VIII, IX, and X (SSC / CBSE) in {siteInfo.address.area}.
+              Join our 2026-27 batch today. Limited seats are available for Class 8 to 10 (SSC / CBSE) in {siteInfo.address.area}.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">

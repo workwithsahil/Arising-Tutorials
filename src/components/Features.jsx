@@ -61,7 +61,7 @@ export default function Features({ limit }) {
               Beyond Just <br className="hidden md:block" /> Rote Learning
             </h2>
             <p className="text-on-surface-variant font-medium text-lg leading-relaxed pt-2">
-              We believe in a holistic approach to education where students are mentored, not just taught. Our methodology is refined over 15 years of delivering top Mumbai results.
+              We focus on a holistic approach to education where students are mentored, not just taught. Our methodology is refined over 15 years of delivering top-tier results in Mumbai.
             </p>
           </motion.div>
 
@@ -76,7 +76,7 @@ export default function Features({ limit }) {
                 transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
                 className="flex gap-6 group cursor-default"
               >
-                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center text-primary border border-surface-variant group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <div className="shrink-0 w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center text-primary border border-surface-variant group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                   <span className="material-symbols-outlined">{materialIconsMap[feature.id] || "school"}</span>
                 </div>
                 <div>

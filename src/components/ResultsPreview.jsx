@@ -24,11 +24,10 @@ export default function ResultsPreview() {
             Our Results
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3">
-            SSC Board Results <span className="text-tertiary">2024-25</span>
+            SSC Board <span className="text-tertiary">2024-25 Toppers</span>
           </h2>
-          <p className="text-on-surface-variant font-medium mt-4 max-w-2xl mx-auto text-lg">
-            Our students consistently achieve outstanding results. Here are
-            some of our top performers from the latest SSC board examinations.
+          <p className="text-on-surface-variant font-medium mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
+            Consistent excellence is our hallmark. See how our latest batch of achievers set new benchmarks in the SSC board exams.
           </p>
         </motion.div>
 

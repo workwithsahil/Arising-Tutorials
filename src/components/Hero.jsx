@@ -60,7 +60,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="bg-white border-2 border-primary/20 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-all"
             >
-              Get Free Demo
+              Claim Free Demo
             </a>
           </motion.div>
         </div>

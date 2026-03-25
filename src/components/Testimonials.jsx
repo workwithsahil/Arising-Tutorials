@@ -21,11 +21,10 @@ export default function Testimonials({ limit }) {
             Testimonials
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3 tracking-tight">
-            What Our <span className="text-tertiary">Students Say</span>
+            Trusted by <span className="text-tertiary">Students & Parents</span>
           </h2>
           <p className="text-on-surface-variant font-medium mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
-            Real reviews from students and parents who have experienced the
-            Arising Tutorials difference.
+            Don't just take our word for it. Hear from those who have transformed their academic journey with the Arising Edge.
           </p>
         </motion.div>
 

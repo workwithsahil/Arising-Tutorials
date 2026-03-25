@@ -27,8 +27,8 @@ export default function CoursesPage() {
               Our <span className="text-tertiary-fixed-dim">Programs</span>
             </h1>
             <p className="text-white/70 text-lg sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-              Comprehensive coaching programs designed to help every student excel.
-              Fees starting from Rs. 8,000 per session.
+              Expertly structured programs designed to master your syllabus and ace competitive exams.
+              Foundational courses starting from ₹8,000.
             </p>
           </motion.div>
         </div>
@@ -107,7 +107,7 @@ export default function CoursesPage() {
             className="mt-16 text-center"
           >
             <p className="text-on-surface-variant font-medium text-base mb-6">
-              Free demo class available before enrolment. Contact us for more details.
+              Claim your free demo class today and experience the Arising Edge before enrolling.
             </p>
             <Link
               to="/contact"
