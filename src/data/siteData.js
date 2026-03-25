@@ -24,12 +24,12 @@ export const siteInfo = {
   justdialReviews: 22,
   workingHours: "Mon - Sat: 7:00 AM - 9:00 PM | Sunday: 7:00 AM - 9:00 PM",
   admissionDeadline: "15 April 2026",
-  boards: ["SSC", "CBSE", "ICSE"],
+  boards: ["SSC", "CBSE"],
   exams: ["JEE Main & Advanced", "NEET", "MHCET", "CET"],
   mission:
     "We don't just teach subjects; we build thinkers. Our mission is to give every student the confidence and clarity they need to ace their exams and lead with ethics.",
   description:
-    "Operating in Andheri East, Mumbai since 2009, Arising Tutorials is the trusted destination for students aiming high. We specialize in Class 8-12 (SSC, CBSE, ICSE), JEE (Main & Advanced), and NEET coaching, delivering consistently top-tier results through personal attention and expert mentorship.",
+    "Operating in Andheri East, Mumbai since 2009, Arising Tutorials is the trusted destination for students aiming high. We specialize in Class 8-12 (SSC & CBSE), JEE (Main & Advanced), and NEET coaching, delivering consistently top-tier results through personal attention and expert mentorship.",
 };
 
 export const courses = [

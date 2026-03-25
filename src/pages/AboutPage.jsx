@@ -78,7 +78,7 @@ export default function AboutPage() {
                 {[
                   { icon: "calendar_today", label: "Established 2009" },
                   { icon: "group", label: "1000+ Students" },
-                  { icon: "menu_book", label: "SSC, CBSE, ICSE" },
+                  { icon: "menu_book", label: "SSC, CBSE" },
                   { icon: "my_location", label: "JEE & NEET" },
                 ].map((item) => (
                   <div

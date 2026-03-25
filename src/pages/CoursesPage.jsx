@@ -20,7 +20,7 @@ export default function CoursesPage() {
             <span className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-2 mb-6">
               <span className="material-symbols-outlined text-tertiary-fixed-dim text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>auto_stories</span>
               <span className="text-white/90 text-xs font-bold font-label uppercase tracking-widest">
-                SSC, CBSE, ICSE, JEE, NEET
+                SSC, CBSE, JEE, NEET
               </span>
             </span>
             <h1 className="text-4xl sm:text-6xl font-extrabold font-headline text-white mb-6 tracking-tight">

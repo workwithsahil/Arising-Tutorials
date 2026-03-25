@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Marquee() {
   const items = [
-    "SSC", "CBSE", "ICSE", "JEE", "NEET", "CLASS 8-12",
+    "SSC", "CBSE", "JEE", "NEET", "CLASS 8-12",
   ];
 
   return (
