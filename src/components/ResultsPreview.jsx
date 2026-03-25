@@ -40,19 +40,31 @@ export default function ResultsPreview() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="group bg-surface-container-low rounded-3xl p-6 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-[0_20px_40px_rgba(12,50,118,0.06)] text-center relative overflow-hidden"
+              className="group bg-surface-container-low rounded-3xl p-4 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-[0_20px_40px_rgba(12,50,118,0.06)] text-center relative overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-tertiary-fixed-dim to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="w-14 h-14 rounded-2xl bg-tertiary-fixed-dim/20 flex items-center justify-center mx-auto mb-4 group-hover:bg-tertiary/10 transition-colors">
-                <Trophy className="w-6 h-6 text-tertiary" />
+              
+              <div className="relative aspect-3/4 rounded-2xl overflow-hidden mb-4 bg-surface-container-highest">
+                {student.image ? (
+                  <img 
+                    src={student.image} 
+                    alt={student.name}
+                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Trophy className="w-6 h-6 text-tertiary/20" />
+                  </div>
+                )}
               </div>
-              <p className="text-3xl font-black font-headline text-primary mb-1">
+
+              <p className="text-2xl font-black font-headline text-primary mb-1">
                 {student.percentage}%
               </p>
-              <p className="text-sm font-bold text-on-surface leading-tight">
+              <p className="text-xs font-bold text-on-surface leading-tight truncate">
                 {student.name}
               </p>
-              <p className="text-xs font-semibold text-on-surface-variant/70 uppercase tracking-widest mt-2 font-label">
+              <p className="text-[10px] font-semibold text-on-surface-variant/70 uppercase tracking-widest mt-2 font-label">
                 SSC 24-25
               </p>
             </motion.div>

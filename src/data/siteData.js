@@ -1,6 +1,7 @@
 export const siteInfo = {
   name: "Arising Tutorials",
-  tagline: "Creating Ethical and Intellectual Personnel Through Qualitative Education",
+  tagline:
+    "Creating Ethical and Intellectual Personnel Through Qualitative Education",
   established: 2009,
   phone: {
     primary: "99102 61179",
@@ -77,15 +78,24 @@ export const courses = [
 ];
 
 export const results = [
-  { name: "Saksham Pandey", percentage: "96.00" },
-  { name: "Prachi Chaurasia", percentage: "94.20" },
-  { name: "Srushti Jadhav", percentage: "93.60" },
-  { name: "Aaron Rego", percentage: "93.60" },
-  { name: "Vedant Pai", percentage: "92.00" },
-  { name: "Ashlesha", percentage: "91.20" },
-  { name: "Shreya Sandha", percentage: "90.00" },
-  { name: "Yash Kamble", percentage: "90.00" },
-  { name: "Siddhant Padewar", percentage: "90.00" },
+  { name: "Saksham Pandey", percentage: "96.00", image: "/SakshamPandey.jpeg" },
+  {
+    name: "Prachi Chaurasia",
+    percentage: "94.20",
+    image: "/PrachiChaurasia.jpeg",
+  },
+  { name: "Srushti Jadhav", percentage: "93.60", image: "/SrushtiJadhav.jpeg" },
+  { name: "Aaron Rego", percentage: "93.60", image: "/AaronRego.jpeg" },
+  { name: "Vedant Pai", percentage: "92.00", image: "/VedantPai.jpeg" },
+  { name: "Ashlesha", percentage: "91.20", image: "/Ashlesha.jpeg" },
+  { name: "Shreya Sandha", percentage: "90.00", image: "/ShreyaSandha.jpeg" },
+  { name: "Yash Kamble", percentage: "90.00", image: "/Yashkamble.jpeg" },
+  {
+    name: "Siddhant Padewar",
+    percentage: "90.00",
+    image: "/SiddhantPadewar.jpeg",
+  },
+  // { name: "Shlok Singh", percentage: "89.20", image: "/ShlokSingh.jpeg" },
 ];
 
 export const features = [

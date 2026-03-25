@@ -108,55 +108,37 @@ export default function ResultsPage() {
                   </div>
                 )}
 
-                <div className="flex items-center gap-5">
-                  {/* Avatar */}
-                  <div
-                    className={`w-16 h-16 rounded-full flex items-center justify-center text-xl font-bold font-headline shrink-0 ${
-                      i === 0
-                        ? "bg-tertiary/10 text-tertiary-fixed-dim"
-                        : "bg-primary/5 text-primary"
-                    }`}
-                  >
-                    {student.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
-                  </div>
-
-                  <div className="flex-1">
-                    <h3 className="text-lg font-extrabold text-primary font-headline">
-                      {student.name}
-                    </h3>
-                    <p className="text-xs font-bold text-on-surface-variant/70 uppercase tracking-widest font-label mt-1">10th SSC Board</p>
-                  </div>
-
-                  {/* Score */}
-                  <div className="text-right">
-                    <p
-                      className={`text-3xl font-extrabold font-headline ${
-                        i === 0 ? "text-tertiary-fixed-dim" : "text-primary/90"
-                      }`}
-                    >
-                      {student.percentage}%
-                    </p>
+                {/* Result Image/Poster */}
+                <div className="relative aspect-3/4 overflow-hidden rounded-2xl mb-6 group cursor-pointer">
+                  {student.image ? (
+                    <img
+                      src={student.image}
+                      alt={`${student.name} Result`}
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-surface-container-highest flex items-center justify-center">
+                      <span className="material-symbols-outlined text-4xl text-on-surface-variant/20">person</span>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-linear-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                    <p className="text-white text-sm font-bold uppercase tracking-widest">{student.name}</p>
                   </div>
                 </div>
 
-                {/* Progress bar */}
-                <div className="mt-8 bg-surface-container-highest rounded-full h-2 overflow-hidden w-full relative">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{
-                      width: `${parseFloat(student.percentage)}%`,
-                    }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.3 + i * 0.05 }}
-                    className={`absolute top-0 left-0 h-full rounded-full ${
-                      i === 0
-                        ? "bg-gradient-to-r from-tertiary-fixed-dim to-[#FFD700]"
-                        : "bg-gradient-to-r from-primary to-[#3A5FA8]"
-                    }`}
-                  />
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <h3 className="text-lg font-extrabold text-primary font-headline leading-tight">
+                      {student.name}
+                    </h3>
+                    <p className="text-[10px] font-bold text-on-surface-variant/70 uppercase tracking-widest font-label mt-1">10th SSC Board</p>
+                  </div>
+
+                  <div className="text-right">
+                    <p className={`text-2xl font-black font-headline ${i === 0 ? "text-tertiary" : "text-primary/90"}`}>
+                      {student.percentage}%
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}
