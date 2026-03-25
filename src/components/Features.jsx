@@ -55,13 +55,13 @@ export default function Features({ limit }) {
             className="space-y-4"
           >
             <h4 className="text-tertiary font-bold uppercase tracking-widest text-xs font-label">
-              The Arising Edge
+              Why Choose Us?
             </h4>
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary tracking-tight leading-tight">
-              Beyond Just <br className="hidden md:block" /> Rote Learning
+              We Teach Smarter, Not Just Harder
             </h2>
             <p className="text-on-surface-variant font-medium text-lg leading-relaxed pt-2">
-              We focus on a holistic approach to education where students are mentored, not just taught. Our methodology is refined over 15 years of delivering top-tier results in Mumbai.
+              Forget boring lectures. We focus on building your confidence and logic. With 15+ years of experience in Mumbai, we know exactly what it takes to help you win.
             </p>
           </motion.div>
 

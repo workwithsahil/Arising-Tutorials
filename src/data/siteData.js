@@ -27,7 +27,7 @@ export const siteInfo = {
   boards: ["SSC", "CBSE", "ICSE"],
   exams: ["JEE Main & Advanced", "NEET", "MHCET", "CET"],
   mission:
-    "Our mission is to transform students into ethical and intellectual high-achievers. At Arising Tutorials, we bring quality education to every door, blending deep knowledge with practical, exam-ready skills.",
+    "We don't just teach subjects; we build thinkers. Our mission is to give every student the confidence and clarity they need to ace their exams and lead with ethics.",
   description:
     "Operating in Andheri East, Mumbai since 2009, Arising Tutorials is the trusted destination for students aiming high. We specialize in Class 8-12 (SSC, CBSE, ICSE), JEE (Main & Advanced), and NEET coaching, delivering consistently top-tier results through personal attention and expert mentorship.",
 };
@@ -35,7 +35,7 @@ export const siteInfo = {
 export const courses = [
   {
     category: "Class 8 to 10 Foundation",
-    subtitle: "Building Strong Foundations",
+    subtitle: "The secret weapon for high school success.",
     items: [
       { name: "Class VI", board: "SSC", fee: "8,000" },
       { name: "Class VII", board: "SSC", fee: "10,000" },
@@ -47,7 +47,7 @@ export const courses = [
   },
   {
     category: "Class 8 to 10 Board Prep",
-    subtitle: "Board Exam Excellence",
+    subtitle: "Master your exams with absolute confidence.",
     items: [
       { name: "Class IX", board: "SSC", fee: "25,000" },
       { name: "Class X", board: "SSC", fee: "35,000" },
@@ -57,7 +57,7 @@ export const courses = [
   },
   {
     category: "Class 11 - 12 Science",
-    subtitle: "Higher Secondary Mastery",
+    subtitle: "Your bridge to top-tier engineering & medical careers.",
     items: [
       { name: "Class XI Science", board: "All Boards", fee: "40,000" },
       { name: "Class XII Science", board: "All Boards", fee: "50,000" },
@@ -65,7 +65,7 @@ export const courses = [
   },
   {
     category: "JEE / NEET",
-    subtitle: "Competitive Exam Preparation",
+    subtitle: "Crush the toughest entrance exams with expert coaching.",
     items: [
       {
         name: "JEE (Main & Advanced) / MHCET",

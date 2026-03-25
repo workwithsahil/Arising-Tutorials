@@ -29,8 +29,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-5xl md:text-7xl font-extrabold font-headline text-primary leading-[1.1] tracking-tight"
           >
-            Where Every Student <br className="hidden sm:block" />
-            <span className="text-tertiary-fixed-dim">Rises to Excel</span>
+            The Smartest Way to Ace Your Exams
           </motion.h1>
           
           <motion.p 
@@ -39,7 +38,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg text-on-surface-variant font-medium max-w-lg leading-relaxed"
           >
-            Premier coaching since {siteInfo.established} | Rated {siteInfo.googleRating} on Google | {siteInfo.address.area}, {siteInfo.address.city}
+            Real mentorship for CBSE, JEE & NEET. No crowded classrooms—just expert teachers who actually care about your score. Rated {siteInfo.googleRating} on Google.
           </motion.p>
           
           <motion.div 

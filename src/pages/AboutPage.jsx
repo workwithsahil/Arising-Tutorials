@@ -43,10 +43,10 @@ export default function AboutPage() {
               </span>
             </span>
             <h1 className="text-4xl sm:text-6xl font-extrabold font-headline text-white mb-6 tracking-tight">
-              About <span className="text-tertiary-fixed-dim">Us</span>
+              The Story of Arising
             </h1>
             <p className="text-white/70 text-lg sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-              Discover how we've been transforming students into academic high-achievers through elite coaching and personal mentorship.
+              We started with a simple goal: to make elite coaching personal. Today, we’re proud to be Andheri’s most trusted destination for student success.
             </p>
           </motion.div>
         </div>
@@ -63,11 +63,10 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-tertiary font-bold text-xs uppercase tracking-[0.2em] font-label">
-                Our Mission
+                Our Why
               </span>
               <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3 mb-8 tracking-tight">
-                Where Excellence Meets{" "}
-                <span className="text-tertiary">Ethics</span>
+                More Than Just Grades
               </h2>
               <p className="text-on-surface-variant font-medium text-lg leading-relaxed mb-6">
                 {siteInfo.mission}
@@ -142,10 +141,10 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <span className="text-tertiary font-bold text-xs uppercase tracking-[0.2em] font-label">
-              Our Journey
+              Our History
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3 tracking-tight">
-              Milestones
+              How We <span className="text-tertiary">Grew</span>
             </h2>
           </motion.div>
 
@@ -198,10 +197,10 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <span className="text-tertiary font-bold text-xs uppercase tracking-[0.2em] font-label">
-              Policies
+              The Rules
             </span>
             <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3 tracking-tight">
-              Our Commitment to You
+              How We <span className="text-tertiary">Keep It Professional</span>
             </h2>
           </motion.div>
 

@@ -29,7 +29,7 @@ export default function SocialProof() {
                 <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>star_half</span>
                 <span className="text-primary font-bold ml-1 text-lg">4.7</span>
               </div>
-              <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label">67 Google Reviews</p>
+              <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label">67 Happy Students</p>
             </div>
           </motion.div>
 
@@ -42,7 +42,7 @@ export default function SocialProof() {
             className="flex flex-col items-center justify-center border-x-0 md:border-x-2 md:border-surface-variant px-4 py-4 md:py-0"
           >
             <p className="text-4xl font-black text-primary font-headline">15+ Years</p>
-            <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label mt-1">Academic Excellence</p>
+            <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label mt-1">of Proven Trust</p>
           </motion.div>
 
           {/* Student Success Stories */}
@@ -59,7 +59,7 @@ export default function SocialProof() {
               <div className="w-10 h-10 rounded-full border-2 border-white bg-primary flex items-center justify-center text-white"><span className="material-symbols-outlined text-sm">person</span></div>
               <div className="w-10 h-10 rounded-full border-2 border-white bg-primary-container flex items-center justify-center text-[10px] text-white font-bold">+1k</div>
             </div>
-            <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label">Success Stories Shared</p>
+            <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label">Success Stories</p>
           </motion.div>
           
         </div>

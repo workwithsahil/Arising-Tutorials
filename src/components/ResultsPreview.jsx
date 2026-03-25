@@ -24,10 +24,10 @@ export default function ResultsPreview() {
             Our Results
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3">
-            SSC Board <span className="text-tertiary">2024-25 Toppers</span>
+            Our Students <span className="text-tertiary">Crush It</span>
           </h2>
           <p className="text-on-surface-variant font-medium mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
-            Consistent excellence is our hallmark. See how our latest batch of achievers set new benchmarks in the SSC board exams.
+            We don't just teach—we deliver. See the students who worked hard and crushed their board exams this year.
           </p>
         </motion.div>
 
@@ -40,15 +40,18 @@ export default function ResultsPreview() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="group bg-surface-container-low rounded-3xl p-4 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-[0_20px_40px_rgba(12,50,118,0.06)] text-center relative overflow-hidden"
+              className="group bg-surface-container-low rounded-3xl p-3 hover:bg-white transition-all duration-300 shadow-sm hover:shadow-[0_20px_40px_rgba(12,50,118,0.06)] text-center relative overflow-hidden flex flex-col items-center"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-tertiary-fixed-dim to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              
+
               <div className="relative aspect-3/4 rounded-2xl overflow-hidden mb-4 bg-surface-container-highest">
                 {student.image ? (
-                  <img 
-                    src={student.image} 
+                  <img
+                    src={student.image}
                     alt={student.name}
+                    loading="lazy"
+                    decoding="async"
+                    fetchpriority={i === 0 ? "high" : "auto"}
                     className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (

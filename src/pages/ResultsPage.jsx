@@ -20,14 +20,14 @@ export default function ResultsPage() {
             <span className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-2 mb-6">
               <span className="material-symbols-outlined text-tertiary-fixed-dim text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>social_leaderboard</span>
               <span className="text-white/90 text-xs font-bold font-label uppercase tracking-widest">
-                SSC Board 2024-25
+                Class of 2024-25
               </span>
             </span>
             <h1 className="text-4xl sm:text-6xl font-extrabold font-headline text-white mb-6 tracking-tight">
-              Our <span className="text-tertiary-fixed-dim">Results</span>
+              Proof of Success
             </h1>
             <p className="text-white/70 text-lg sm:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-              Proven results year after year. Our students consistently outshine the competition with elite scores and top rankings.
+              We don't just talk about excellence—we prove it. Year after year, our students break records and set new benchmarks for success.
             </p>
           </motion.div>
         </div>
@@ -38,10 +38,10 @@ export default function ResultsPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { icon: "workspace_premium", value: "96%", label: "Highest Score" },
-              { icon: "star", value: "9", label: "Students Above 90%" },
-              { icon: "trending_up", value: "92.4%", label: "Average Score" },
-              { icon: "emoji_events", value: "2024-25", label: "SSC Board Exam" },
+              { icon: "workspace_premium", value: "96%", label: "Top Score" },
+              { icon: "star", value: "9+", label: "Achievers (90%+)" },
+              { icon: "trending_up", value: "92.4%", label: "Batch Average" },
+              { icon: "emoji_events", value: "2024-25", label: "Latest Results" },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}
@@ -72,10 +72,10 @@ export default function ResultsPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-extrabold text-primary font-headline tracking-tight">
-              Celebrating Our <span className="text-tertiary">2024-25 Stars</span>
+              Meet the <span className="text-tertiary">Wall of Fame</span>
             </h2>
             <p className="text-on-surface-variant font-medium mt-4 text-lg">
-              Meet the achievers who turned dedication into top-tier board scores.
+              Hard work and right mentorship. These are the students who crushed their 2024-25 board exams.
             </p>
           </motion.div>
 
@@ -87,22 +87,20 @@ export default function ResultsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.08 }}
-                className={`flex flex-col relative bg-white rounded-3xl p-8 border hover:-translate-y-1 transition-all duration-300 ${
-                  i === 0
+                className={`flex flex-col relative bg-white rounded-3xl p-5 border hover:-translate-y-1 transition-all duration-300 ${i === 0
                     ? "border-tertiary-fixed-dim/30 shadow-[0_20px_40px_rgba(245,166,35,0.15)]"
                     : "border-surface-variant shadow-sm hover:shadow-[0_20px_40px_rgba(12,50,118,0.06)]"
-                }`}
+                  }`}
               >
                 {/* Rank badge */}
                 {i < 3 && (
                   <div
-                    className={`absolute -top-4 -right-4 w-12 h-12 rounded-full flex items-center justify-center text-white text-sm font-bold shadow-lg font-headline ${
-                      i === 0
+                    className={`absolute -top-4 -right-4 w-12 h-12 rounded-full flex items-center justify-center text-white text-sm font-bold shadow-lg font-headline ${i === 0
                         ? "bg-tertiary"
                         : i === 1
-                        ? "bg-gray-400"
-                        : "bg-amber-700"
-                    }`}
+                          ? "bg-gray-400"
+                          : "bg-amber-700"
+                      }`}
                   >
                     #{i + 1}
                   </div>
@@ -114,6 +112,9 @@ export default function ResultsPage() {
                     <img
                       src={student.image}
                       alt={`${student.name} Result`}
+                      loading="lazy"
+                      decoding="async"
+                      fetchpriority={i < 3 ? "high" : "auto"}
                       className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
@@ -153,13 +154,13 @@ export default function ResultsPage() {
             className="text-center mt-20"
           >
             <p className="text-on-surface-variant text-base font-medium mb-6">
-              Ready to secure your spot among the next batch of toppers?
+              Want to see your name on this wall next year? Let’s make it happen.
             </p>
             <Link
               to="/contact"
               className="inline-flex items-center gap-3 bg-tertiary-fixed-dim hover:bg-tertiary-fixed text-tertiary px-8 py-4 rounded-xl text-sm font-bold uppercase tracking-[0.15em] transition-all duration-300 shadow-[0_4px_14px_rgba(245,166,35,0.3)] hover:shadow-[0_6px_20px_rgba(245,166,35,0.4)] hover:-translate-y-0.5 group"
             >
-              Start Your Journey
+              Book My Free Demo
               <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">east</span>
             </Link>
           </motion.div>

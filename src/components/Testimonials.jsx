@@ -18,13 +18,13 @@ export default function Testimonials({ limit }) {
           className="text-center mb-16"
         >
           <span className="text-tertiary font-bold text-xs uppercase tracking-[0.2em] font-label">
-            Testimonials
+            Real Stories
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold font-headline text-primary mt-3 tracking-tight">
-            Trusted by <span className="text-tertiary">Students & Parents</span>
+            What <span className="text-tertiary">Our Community</span> Says
           </h2>
           <p className="text-on-surface-variant font-medium mt-4 max-w-2xl mx-auto text-lg leading-relaxed">
-            Don't just take our word for it. Hear from those who have transformed their academic journey with the Arising Edge.
+            No sales pitch needed. Here’s what students and parents actually think about studying with us.
           </p>
         </motion.div>
 

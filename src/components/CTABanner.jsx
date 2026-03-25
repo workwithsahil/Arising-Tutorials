@@ -27,11 +27,11 @@ export default function CTABanner() {
             </div>
 
             <h2 className="text-4xl md:text-6xl font-extrabold text-white font-headline leading-tight mb-6 tracking-tight">
-              Ready to Rise to <br className="hidden md:block" /> Your Potential?
+              Your Best Grades Start Right Here.
             </h2>
             
             <p className="text-primary-fixed-dim text-lg md:text-xl max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
-              Join our 2026-27 batch today. Limited seats are available for Class 8 to 10 (SSC / CBSE) in {siteInfo.address.area}.
+              Our 2026-27 batches are filling up fast. Grab your seat today and give your child the coaching they deserve.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
