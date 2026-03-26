@@ -150,8 +150,7 @@ export default function CoursesPage() {
             className="mt-32"
           >
             <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-5xl font-extrabold font-headline text-primary mb-6">
-                {activeExam === "jee" ? "JEE Main & Advanced" : "NEET (UG)"} Syllabus
+              <h2 className="text-3xl sm:text-5xl font-extrabold font-headline text-primary mb-6">Syllabus
               </h2>
               <p className="text-on-surface-variant font-medium text-lg max-w-2xl mx-auto">
                 Comprehensive, results-oriented syllabus designed to bridge the gap between school curriculum and competitive excellence.
@@ -171,8 +170,8 @@ export default function CoursesPage() {
                         key={exam}
                         onClick={() => setActiveExam(exam)}
                         className={`px-6 py-2.5 rounded-xl text-[10px] sm:text-xs font-black uppercase tracking-widest transition-all duration-300 ${activeExam === exam
-                            ? "bg-primary text-white shadow-md"
-                            : "text-primary/60 hover:text-primary hover:bg-white/50"
+                          ? "bg-primary text-white shadow-md"
+                          : "text-primary/60 hover:text-primary hover:bg-white/50"
                           }`}
                       >
                         {exam === "jee" ? "JEE" : "NEET"}
@@ -187,8 +186,8 @@ export default function CoursesPage() {
                         key={classKey}
                         onClick={() => setActiveClass(classKey)}
                         className={`px-6 py-2.5 rounded-xl text-[10px] sm:text-xs font-black uppercase tracking-widest transition-all duration-300 ${activeClass === classKey
-                            ? "bg-primary text-white shadow-md"
-                            : "text-primary/60 hover:text-primary hover:bg-white/50"
+                          ? "bg-primary text-white shadow-md"
+                          : "text-primary/60 hover:text-primary hover:bg-white/50"
                           }`}
                       >
                         {classKey === "class11" ? `Class 11 (${activeExam.toUpperCase()})` : `Class 12 (${activeExam.toUpperCase()})`}
@@ -218,12 +217,12 @@ export default function CoursesPage() {
                   {(activeExam === "jee" ? ["physics", "chemistry", "mathematics"] : ["physics", "chemistry", "biology"]).map((subject) => (
                     <div key={subject} className="flex flex-col bg-surface-container-lowest p-6 rounded-3xl border border-surface-variant/30 hover:shadow-xl transition-all duration-500 group/card relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl -mr-16 -mt-16 group-hover/card:bg-tertiary/10 transition-colors duration-500" />
-                      
+
                       <div className="flex items-center gap-4 mb-6 relative z-10">
                         <div className={`p-3 rounded-2xl shadow-sm ${subject === "physics" ? "bg-blue-50 text-blue-600 border border-blue-100" :
-                            subject === "chemistry" ? "bg-green-50 text-green-600 border border-green-100" :
+                          subject === "chemistry" ? "bg-green-50 text-green-600 border border-green-100" :
                             subject === "mathematics" ? "bg-purple-50 text-purple-600 border border-purple-100" :
-                            "bg-rose-50 text-rose-600 border border-rose-100"
+                              "bg-rose-50 text-rose-600 border border-rose-100"
                           }`}>
                           <span className="material-symbols-outlined text-2xl group-hover/card:scale-110 transition-transform duration-300">
                             {subject === "physics" ? "bolt" : subject === "chemistry" ? "science" : subject === "mathematics" ? "calculate" : "biotech"}
